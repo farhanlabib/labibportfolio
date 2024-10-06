@@ -1,0 +1,129 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-text-div {
+  margin-left: 50px;
+}
+
+.skills-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.skills-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skills-heading {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* Style for the skill icons */
+.software-skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px; /* Add space between text and icons */
+}
+
+.software-skill-item {
+  margin: 5px; /* Increased margin for better spacing */
+  text-align: center;
+  font-size: 12px;
+  transition: transform 0.3s ease-in-out; /* Adding hover effect */
+}
+
+.software-skill-item p {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-right: 5px; /* Adjust font size for paragraph text */
+}
+
+
+.software-skill-item:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.software-skill-icon {
+  width: 40px;
+  height: auto;
+  margin-bottom: 2px;
+
+  /* Add box effect */
+  padding: 10px;               /* Add padding inside the box */
+  border: 1px solid #ccc;       /* Light border around the icon */
+  border-radius: 10px;          /* Optional: Round the edges of the box */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+  background-color: #f9f9f9;    /* Background color for the box */
+  transition: all 0.3s ease;    /* Smooth transition for hover effect */
+}
+
+.software-skill-icon:hover {
+  /* Optional: Hover effect to make the box stand out more on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);       /* Slightly enlarge the icon on hover */
+}
+
+/* Media Queries */
+
+/* Adjust icon size and layout for medium screens */
+@media (max-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+
+  .software-skill-icon {
+    width: 40px; /* Adjust the icon size for smaller screens */
+  }
+}
+
+/* Further adjustments for smaller screens (tablets and phones) */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .skills-main-div {
+    flex-direction: column;
+  }
+
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+
+  .skills-text {
+    font-size: 16px;
+  }
+
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .skills-image-div {
+    order: 2;
+  }
+
+  /* Adjust icon size for mobile screens */
+  .software-skill-icon {
+    width: 30px; /* Smaller icon size for mobile screens */
+  }
+}

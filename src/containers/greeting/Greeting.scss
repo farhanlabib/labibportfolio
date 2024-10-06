@@ -1,0 +1,77 @@
+.greet-main {
+  width: 75%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px; /* Adds space between the image and text */
+}
+
+.greeting-image-div img {
+  width: 300px; /* Set the desired width */
+  height: 300px; /* Set the desired height */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover; /* Ensures the image fits within the bounds */
+  border: 2px solid #f0f0f0; /* Optional: Add a border around the image */
+}
+
+/* Adjust the size of the hand animation */
+.wave-emoji {
+  display: inline-block;
+  width: 1.5em; /* Adjust the size based on the font-size */
+  height: 1.5em; /* Matches the width */
+  margin-left: 5px; /* Optional: Adjust spacing between title and emoji */
+  vertical-align: middle; /* Aligns with the title */
+}
+
+.button-greeting-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; /* Ensures buttons align properly */
+  gap: 5px; /* Adds minimal space between buttons */
+}
+
+.button-greeting-div a.main-button {
+  padding: 10px 20px; /* Adjust padding as necessary to reduce button size */
+  text-decoration: none;
+}
+
+.button-greeting-div a.main-button:last-child {
+  margin-right: 0; /* Ensure no margin after the last button */
+}
+
+.download-link-button {
+  text-decoration: none;
+  margin-right: 5px; /* Minimize the space between Resume and Contact buttons */
+}
+
+@media (max-width: 768px) {
+  .greet-main {
+    padding: 20px;
+  }
+
+  .greeting-main {
+    display: block; /* Stack image and text vertically on smaller screens */
+  }
+
+  .greeting-image-div {
+    margin-bottom: 20px; /* Adds space between image and text in mobile view */
+  }
+
+  .button-greeting-div {
+    justify-content: center; /* Keeps buttons centered in mobile view */
+    gap: 5px; /* Maintain gap between buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap if needed in narrow screens */
+  }
+}
